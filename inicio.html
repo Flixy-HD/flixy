@@ -170,42 +170,7 @@
             color: #e50914;
         }
 
-        /* Estilos para el slider estilo Netflix */
-        .slider-container {
-            margin-top: 8px;
-            overflow: hidden;
-            position: relative;
-            z-index: 1; /* Asegura que el slider esté por debajo del menú */
-            
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease;
-            max-width: 850px; /* Tamaño máximo de las imágenes en las secciones */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .slide {
-            min-width: 100%;
-            overflow: hidden;
-            transform: translateX(15%);
-            
-            
-        }
-
-        .slide img {
-            width: 73%;
-            vertical-align: middle;
-            display: block;
-            margin-left: acenter;
-            margin-right: 20px;
-            border-radius: 10px; /* Cambia el valor según lo redondeado que desees que sean las esquinas */
-            background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5)); /* Define el gradiente de la sombra */
-            backdrop-filter: blur(100px) saturate(200%); /* Efecto de desenfoque y saturación */
-        } 
+        
         
         
     
@@ -257,7 +222,7 @@
 
         /* Estilos para las secciones */
         .sections-container {
-            margin-top: 20px;
+           
             overflow-x: auto;
             white-space: nowrap;
             z-index: 1; /* Asegura que las secciones estén por debajo del menú */
@@ -268,7 +233,9 @@
         .section {
             display: inline-block;
             vertical-align: top;
-            margin-right: 2px;
+            margin-right: 20px;
+            
+            
         }
             
            
@@ -287,8 +254,12 @@
             overflow-x: auto;
             margin: 20px; /* Puedes ajustar este valor según tus preferencias */
             transform: translateX(3%);
+            height: auto; /* Ajustar la altura automáticamente según el ancho */
+            object-fit: contain; /* Contener el video en lugar de cubrirlo completamente */
+            
             
         }
+       
 
         .section-content::-webkit-scrollbar {
             display: none;
@@ -297,7 +268,7 @@
         .section-item {
             flex: 0 0 auto;
             margin-right: 10px;
-            max-width: 170px; /* Tamaño máximo de las imágenes en las secciones */
+            max-width: 128px; /* Tamaño máximo de las imágenes en las secciones */
         }
 
         .section-item img {
@@ -372,7 +343,7 @@
     }
     @media only screen and (max-width: 768px) {
         .section-item img {
-            max-width: 120px; /* Cambia el tamaño máximo de la imagen según lo necesites */
+            max-width: 97px; /* Cambia el tamaño máximo de la imagen según lo necesites */
             
             
         }
@@ -503,18 +474,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .imagotipo {
     display: flex;
     flex-direction: column;
@@ -542,6 +501,16 @@
     bottom: 43px;
     left: 20px;
 }
+
+.footer {
+        align-items: flex-start; /* Alinea los elementos al principio del eje y */
+        margin: -30px 0;
+        width: 100%;
+        height: auto; /* Ajustar la altura automáticamente según el ancho */
+        object-fit: contain; /* Contener el video en lugar de cubrirlo completamente */
+        
+        
+    }  
 
 
 
@@ -582,6 +551,8 @@
         width: 100%;
         height: auto; /* Ajustar la altura automáticamente según el ancho */
         object-fit: contain; /* Contener el video en lugar de cubrirlo completamente */
+        
+        
     }    
         
     .sections-container {
@@ -590,7 +561,16 @@
     }  
 }  
 
-</style>    
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6D37VPPT8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-W6D37VPPT8');
+</script>
 </head>
 <body>
     <!-- Header -->
@@ -612,7 +592,7 @@
                             <li><a href="Comedia/Lisa Frankenstein.html">Lisa Frankenstein </a></li>
                             <li><a href="Comedia/Dobles de acción.html">Dobles de acción </a></li>
                             <li><a href="Comedia/Snack Shack.html">Snack Shack </a></li>
-                            <li><a href="Comedia/La Madre de la Novia.html">Snack Shack </a></li>
+                            <li><a href="Comedia/La Madre de la Novia.html">La Madre de la Novia </a></li>
                             <li><a href="Comedia/Permanente.html">Permanente </a></li>
                             <li><a href="Comedia/Perra vida.html">Perra vida </a></li>
                             <li><a href="Comedia/Es por su bien.html">Es por su bien </a></li>
@@ -621,7 +601,7 @@
                             <li><a href="Comedia/¿Estoy bien.html">¿Estoy bien? </a></li>
                             <li><a href="Comedia/Matusalén.html">Matusalén </a></li>
                             <li><a href="Comedia/La herencia tiene un precio.html">La herencia tiene un precio </a></li>
-                            <li><a href="Comedia/Demasiado mayor para cuentos de hadas 2.html">La herencia tiene un precio </a></li>
+                            <li><a href="Comedia/Demasiado mayor para cuentos de hadas 2.html">Demasiado mayor para cuentos de hadas 2 </a></li>
                             <li><a href="Comedia/Crew.html">Crew </a></li>
                             <li><a href="Comedia/La joven Francesa.html">La joven Francesa </a></li>
                             <li><a href="peliculas/Ip man 4.html">Ip man 4 </a></li>
@@ -733,7 +713,7 @@
                             <li><a href="peliculas/La Criatura del Desierto.html">La Criatura del Desierto </a></li>
                             <li><a href="peliculas/Control El poder de la mente.html">Control El poder de la mente </a></li>
                             <li><a href="peliculas/kill mode.html">kill mode </a></li>
-                            <li><a href="peliculas/Sayen.html">Sayen </a></li>
+                            <li><a href="peliculas/Sayen.html">kill mode </a></li>
                             <li><a href="peliculas/Detención oscura.html">Detención oscura </a></li>
                             <li><a href="peliculas/Diabolik ¡Ginko al ataque!.html">Diabolik ¡Ginko al ataque! </a></li>
                             <li><a href="peliculas/Mega Lightning.html">Mega Lightning </a></li>
@@ -749,7 +729,7 @@
                             <li><a href="peliculas/Monster Mash.html">Monster Mash </a></li>
                             <li><a href="peliculas/Plaga Zombie Invasion Americana.html">Plaga Zombie: Invasion Americana </a></li>
                             <li><a href="peliculas/Noryang Deadly Sea.html">Noryang: la batalla final </a></li>
-                            <li><a href="peliculas/Hart duro de entrenar 2.html">Hart duro de entrenar 2 </a></li>
+                            <li><a href="peliculas/Hart duro de entrenar 2.html">Noryang: la batalla final </a></li>
                             <li><a href="peliculas/Aguas que corroen.html">Aguas que corroen </a></li>
                             <li><a href="peliculas/Grupo de asalto.html">Grupo de asalto </a></li>
                             <li><a href="peliculas/Estación Zombie 2 Península.html">Estación Zombie 2 Península </a></li>
@@ -902,6 +882,7 @@
                             <li><a href="Infantil/IntensaMente 2.html">IntensaMente 2</a></li>
                             <li><a href="Infantil/Ultraman El ascenso.html" >Ultraman El ascenso </a></li>
                             <li><a href="Infantil/Mi villano favorito 4.html" >Mi villano favorito 4 </a></li>
+                            <li><a href="peliculas/Taken from Rio Bravo.html">Taken from Rio Bravo</a></li>
                             
                         </ul>
                     </div>
@@ -920,11 +901,6 @@
                         <li><a href="Comedia.html">Comedia</a></li>
                         <li><a href="terror.html">Terror</a></li>
                         <li><a href="infantil.html">Infantil</a></li>
-                        <li><a href="Series.html"></a></li>
-                        <li><a href="Anime.html"></a></li>
-                        <li><a href="Doramas.html"></a></li>
-                        <li><a href="historas.html"></a></li>
-                        
                     </ul>
                 </div>
             </div>
@@ -973,6 +949,10 @@
                     
                      
                     <div class="section-item">
+                        <a href="peliculas/Taken from Rio Bravo.html"><img src="Multimedia/Caratulas/Taken from Rio Bravo.jpg" alt="" class="item-img"></a>
+                    </div> 
+
+                    <div class="section-item">
                         <a href="Infantil/Mi villano favorito 4.html"><img src="https://image.tmdb.org/t/p/original/cihfEI1cwTORZ9W0nDPgxiVCoiZ.jpg" alt="Estreno 1"></a>
                     </div> 
 
@@ -1004,9 +984,7 @@
                         <a href="peliculas/Bad Boys Hasta la muerte.html"><img src="Multimedia/Caratulas/Bad Boys Hasta la muerte.jpg" alt="" class="item-img"></a>
                     </div>
                    
-                    <div class="section-item">
-                        <a href="peliculas/Furiosa De la saga Mad Max.html"><img src="Multimedia/Caratulas/Furiosa De la saga Mad Max.jpg" alt="" class="item-img"></a>
-                    </div>    
+                       
                 </div>
             </div>
         </div>
@@ -1254,7 +1232,7 @@
                 </body>
                 </html>
                 <br>
-                 <br><br><br><center><p class="idioma"> Nos reservamos todos los derechos  </p></center>
+                 <br><br><br><p class="idioma">  </p>
             
         </div>
     </footer>
