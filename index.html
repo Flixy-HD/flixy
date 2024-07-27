@@ -6,30 +6,29 @@
     <title>Flixy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://www.cronista.com/files/image/506/506181/63c94f06a5588.jpg');
             background-size: cover;
             background-position: center;
-            color: #fff; /* Color del texto sobre la imagen de fondo */
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Mínimo alto de la pantalla visible */
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            backdrop-filter: blur(8px);
             
         }
 
         .container {
-            text-align: center;
-            max-width: 800px; /* Ancho máximo del contenido */
+            max-width: 400px;
+            margin: 20px;
             padding: 20px;
-            margin: 0 auto; /* Centrar el contenido horizontalmente */
-            background-color: rgba(66, 66, 66, 0.322); /* Fondo semitransparente */
-            border-radius: 10px;
-            backdrop-filter: blur(15px);
-            box-shadow: 0px 1px 19px 0px rgba(255, 0, 0, 0.164);
+            border-radius: 8px;
+            background-color: rgba(33, 31, 31, 0.582); /* Fondo semi-transparente */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.264);
+            text-align: center;
+            display: none; /* Ocultar hasta que se cargue el contenido */
+            
         }
         
 
